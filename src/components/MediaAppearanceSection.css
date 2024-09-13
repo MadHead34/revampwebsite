@@ -1,0 +1,47 @@
+.media-appearance-section {
+    position: relative;
+    padding: 50px 0;
+    background-color: #f8f9fa; 
+  }
+  
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0c3c8c; 
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 10;
+    pointer-events: none;
+  }
+  
+  .video-wrapper:hover .video-iframe {
+    transform: scale(1.05);
+  }
+  
+  .video-wrapper:hover .video-iframe {
+    transform: scale(1.05);
+    opacity: 0.8;
+    animation-play-state: running;
+  }

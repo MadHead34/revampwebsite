@@ -1,0 +1,40 @@
+.quote-section {
+    background-color: #1A2B51; 
+    padding: 60px 0;
+    color: #ffffff; 
+}
+
+.quote-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px; 
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #f0f8ff
+}
+
+.quote-author {
+    font-size: 16px;
+    font-weight: 400;
+    color: #dcdcdc; 
+}
+
+@media (max-width: 768px) {
+    .quote-box {
+        padding: 30px;
+    }
+
+    .quote-text {
+        font-size: 20px;
+    }
+
+    .quote-author {
+        font-size: 14px;
+    }
+}

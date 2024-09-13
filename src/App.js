@@ -1,25 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AppNavbar from './components/AppNavBar';
+import Header from './components/Header';
+import TherapySection from './components/TherapySection';
+import PeopleSection from './components/PeopleSection';
+import DataDrivenSection from './components/DataDrivenSection';
+import BalanceSection from './components/BalanceSection';
+import QuoteSection from './components/QuoteSection';
+import MediaAppearanceSection from './components/MediaAppearanceSection';
+import SubmitFormSection from './components/SubmitFormSection';
+import Footer from './components/Footer';
+import StatsSection from './components/StatSection';
+import BenefitSection from './components/BenefitSection';
+import { Fade } from 'react-awesome-reveal';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'; 
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AppNavbar />
+      <main>
+        <Fade triggerOnce>
+          <Header />
+        </Fade>
+        <Fade triggerOnce>
+          <StatsSection />
+        </Fade>
+        <Fade triggerOnce>
+          <TherapySection />
+        </Fade>
+        <Fade triggerOnce>
+        <DataDrivenSection />
+        </Fade>
+        <Fade triggerOnce>
+        <QuoteSection />
+        </Fade>
+        
+        <Fade triggerOnce>
+        <BalanceSection />
+        </Fade>
+        
+        <Fade triggerOnce>
+        <BenefitSection />
+        </Fade>
+        
+        <Fade triggerOnce>
+        <PeopleSection />
+        </Fade>
+        
+        <Fade triggerOnce>
+        <MediaAppearanceSection />
+        </Fade>
+        
+        <Fade triggerOnce>
+        <SubmitFormSection />
+        </Fade>
+        
+        <Footer />
+        
+      </main>
     </div>
   );
 }
+
+
 
 export default App;

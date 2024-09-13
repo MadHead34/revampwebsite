@@ -1,0 +1,49 @@
+.profile-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-wrapper {
+    position: relative;
+}
+
+.card-img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.card-img-wrapper:hover .card-img {
+    filter: grayscale(0%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.overlay button {
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    cursor: pointer;
+}

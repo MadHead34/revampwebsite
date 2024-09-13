@@ -1,0 +1,31 @@
+.therapy-section {
+    background-color: #f0f4f8; 
+    padding: 60px 0;
+}
+
+.therapy-box {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.therapy-box h4 {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.therapy-box p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.therapy-icon {
+    font-size: 40px;
+    color: #4a5b74;
+    margin-bottom: 10px;
+}
+
+.therapy-section h2 {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
