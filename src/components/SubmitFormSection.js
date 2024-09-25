@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import './SubmitFormSection.css';
 
 function SubmitFormSection() {
@@ -32,6 +33,19 @@ function SubmitFormSection() {
             <h2>Contact Us</h2>
             <p>Reach out to us for any inquiries or collaborations!</p>
             <img src="/images/manana.png" alt="Manana Logo" className="logo" />
+
+            <div className="social-icons mt-4">
+              <a href="https://www.linkedin.com/company/manana" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={40} className="mr-3" />
+              </a>
+              <a href="https://www.instagram.com/manana" target="_blank" rel="noopener noreferrer">
+                <FaInstagram size={40} className="mr-3" />
+              </a>
+              <a href="https://www.facebook.com/manana" target="_blank" rel="noopener noreferrer">
+                <FaFacebook size={40} />
+              </a>
+            </div>
+            
           </Col>
           <Col md={6}>
             <Form onSubmit={handleSubmit} className="submit-form">
