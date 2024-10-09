@@ -10,7 +10,7 @@ const MediaAppearanceSection = () => {
           <div className="video-wrapper">
             <iframe
               className="video-iframe"
-              src="https://www.youtube.com/watch?v=pYCWFDoZ05g"
+              src="https://www.youtube.com/embed/QV5ZBuNJMx0?si=fC5f5WnpgTXG7ShY"
               title="Media Appearance"
               allow="autoplay"
             ></iframe>

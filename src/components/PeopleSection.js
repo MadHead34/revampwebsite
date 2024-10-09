@@ -23,9 +23,10 @@ const people = [
     }
 ];
 
-function PeopleSection() {
+// Applying the ref to the outermost container (Container in this case)
+const PeopleSection = React.forwardRef((props, ref) =>  {
     return (
-        <Container>
+        <Container id="people-section">
             <h2 className="text-center">People</h2>
             <Row>
                 {people.map((person, index) => (
@@ -36,6 +37,6 @@ function PeopleSection() {
             </Row>
         </Container>
     );
-}
+});
 
 export default PeopleSection;

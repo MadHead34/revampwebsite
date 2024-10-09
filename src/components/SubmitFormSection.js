@@ -3,7 +3,8 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import './SubmitFormSection.css';
 
-function SubmitFormSection() {
+// Ensure ref is applied to the outermost div or container
+const SubmitFormSection = React.forwardRef((props, ref) => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -26,7 +27,7 @@ function SubmitFormSection() {
   };
 
   return (
-    <div className="submit-form-section">
+    <div id="contact-section" className="submit-form-section">
       <Container>
         <Row>
           <Col md={6} className="form-text">
@@ -117,6 +118,6 @@ function SubmitFormSection() {
       </Container>
     </div>
   );
-}
+});
 
 export default SubmitFormSection;

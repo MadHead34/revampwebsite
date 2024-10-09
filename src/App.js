@@ -17,9 +17,20 @@ import './App.css';
 
 
 function App() {
+  
+    const handleScrollToSectionById = (id) => {
+      const element = document.getElementById(id);
+      if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+      }
+  };
+
   return (
     <div>
-      <AppNavbar />
+      <AppNavbar 
+ onScrollToTeam={() => handleScrollToSectionById('people-section')}
+ onScrollToContact={() => handleScrollToSectionById('contact-section')}
+      />
       <main>
         <Fade triggerOnce>
           <Header />
@@ -54,7 +65,7 @@ function App() {
         </Fade>
         
         <Fade triggerOnce>
-        <SubmitFormSection />
+        <SubmitFormSection  />
         </Fade>
         
         <Footer />
